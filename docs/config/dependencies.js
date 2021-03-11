@@ -7,6 +7,7 @@ let dependencies = [
     "//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js",
     "//cdn.jsdelivr.net/npm/docsify-tabs@1",
     "//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js",
+    "//cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/line-numbers/prism-line-numbers.min.js",
     "//cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-java.js",
     "//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js",
     "//cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js",

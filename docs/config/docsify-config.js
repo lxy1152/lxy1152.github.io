@@ -9,12 +9,10 @@ window.$docsify = {
     // 定义路由别名, 说实话不加也行, 但是console上面的报错看着很难受
     alias: {
         "/.*/_navbar.md": "/_navbar.md",
-        "/leetcode/.*/_navbar.md": "/leetcode/_sidebar.md"
+        "/leetcode/.*/_sidebar.md": "/leetcode/_sidebar.md"
     },
     // 在跳转到新页面后是否自动跳转到顶部
     auto2top: true,
-    // 是否自动显示标题
-    autoHeader: true,
     // 分页插件配置
     pagination: {
         previousText: '上一章节',
