@@ -1,16 +1,16 @@
-<div align="center">
-<h1>学习笔记整理</h1>
-<a href="https://github.com/lxy1152/lxy1152.github.io">
-<img src="https://img.shields.io/badge/github-lxy1152.github.io--master-blue"/>
-</a>
-<a href="https://github.com/lxy1152/Notes/tree/master/LeetCode">
-<img src="https://img.shields.io/badge/LeetCode-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0-yellow"/>
-</a>
-<img src="https://img.shields.io/badge/java-1.8-green">
-</div>
-
----
-
 ## 笔记分类
 
-* [LeetCode刷题笔记](leetcode/README)
+<!-- cards:start -->
+<!-- card:start -->
+img:: https://docsify.js.org/_media/icon.svg
+title:: ⚒️Docsify使用指南
+description:: 整理Docsify使用过程中遇到的问题
+link:: /#/docsify/README
+<!-- card:end -->
+
+<!-- card:start -->
+img:: https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3691817199,1840648023&fm=26&gp=0.jpg
+title:: 📝LeetCode刷题笔记
+description:: LeetCode刷题资料整理
+link:: /#/leetcode/README
+<!-- card:end -->

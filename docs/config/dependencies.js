@@ -11,7 +11,8 @@ let dependencies = [
     "//cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-java.js",
     "//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js",
     "//cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js",
-    "//cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    "//cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js",
+    "config/plugin/cards.js"
 ];
 
 for (let i = 0; i < dependencies.length; i++) {

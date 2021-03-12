@@ -9,7 +9,8 @@ window.$docsify = {
     // 定义路由别名, 说实话不加也行, 但是console上面的报错看着很难受
     alias: {
         "/.*/_navbar.md": "/_navbar.md",
-        "/leetcode/.*/_sidebar.md": "/leetcode/_sidebar.md"
+        "/leetcode/.*/_sidebar.md": "/leetcode/_sidebar.md",
+        "/docsify/.*/_sidebar.md": "/docsify/_sidebar.md",
     },
     // 在跳转到新页面后是否自动跳转到顶部
     auto2top: true,
@@ -28,8 +29,7 @@ window.$docsify = {
             });
 
             hook.beforeEach(function (content) {
-                // Invoked each time before parsing the Markdown file.
-                // ...
+                content = cardsParse(content);
                 return content;
             });
 
