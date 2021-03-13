@@ -1,7 +1,7 @@
 // 设置docsify的各种配置项
 window.$docsify = {
-    // 导航栏将在小屏幕上与侧边栏合并
-    mergeNavbar: true,
+    // 文章中标题显示的最大深度
+    subMaxLevel: 3,
     // 是否通过markdown文件的形式配置导航栏
     loadNavbar: true,
     // 是否通过markdown文件的形式配置侧边栏
@@ -18,8 +18,7 @@ window.$docsify = {
     pagination: {
         previousText: '上一章节',
         nextText: '下一章节',
-        crossChapter: true,
-        crossChapterText: true,
+        crossChapter: true
     },
     // 自定义插件配置
     plugins: [

@@ -1,0 +1,211 @@
+/* 将导航栏设置为固定 */
+.app-nav {
+    position: fixed;
+    margin: 0;
+    padding: 10px 0 10px 0;
+    background-color: transparent;
+}
+
+/* 去除链接的下划线 */
+.app-nav ul li a:hover {
+    text-decoration: none;
+}
+
+/* 设置水平和垂直滚动条的样式 */
+::-webkit-scrollbar-thumb:horizontal {
+    width: 4px;
+    background-color: #CCCCCC;
+    -webkit-border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 50px;
+    background-color: #999;
+    -webkit-border-radius: 15px;
+    outline: 2px solid #fff;
+    outline-offset: -2px;
+    border: 2px solid #fff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    height: 50px;
+    background-color: #9f9f9f;
+    -webkit-border-radius: 15px;
+}
+
+/* 设置侧边栏 */
+.sidebar-nav img {
+    border-radius: 0;
+    margin-right: 8px;
+}
+
+.sidebar-nav ul li {
+    cursor: default;
+}
+
+.sidebar-nav ul li a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #42B983;
+}
+
+/* 设置加粗字体的颜色 */
+.markdown-section strong {
+    color: rgb(239, 112, 96);
+}
+
+/* 设置标题的链接格式 */
+h1 a {
+    color: #34495e !important;
+    transition: color 300ms;
+}
+
+h1 a:hover {
+    text-decoration: none;
+    color: #42B983 !important;
+}
+
+/* 所有标题都不要显示下划线 */
+.anchor:hover {
+    text-decoration: none;
+}
+
+/* 标题之间缩短一下距离 */
+.markdown-section h1 {
+    margin: 3rem 0 2rem 0;
+}
+
+.markdown-section h2 {
+    margin: 2rem 0 1rem;
+}
+
+/* 对img和pre标签加上圆角边框 */
+img, pre {
+    border-radius: 5px;
+}
+
+/* 重新设置代码块区域的样式 */
+pre {
+    background-color: rgb(38, 50, 56) !important;
+}
+
+.markdown-section pre:before {
+    content: '';
+    display: block;
+    background: url(https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716201955.png);
+    height: 30px;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-color: rgb(38, 50, 56) !important;
+    background-position: 10px 10px;
+}
+
+.markdown-section pre > code {
+    color: #c0c3c1 !important;
+    font-family: 'Inconsolata', consolas, "PingFang SC", "Microsoft YaHei", monospace !important;
+    background-color: rgb(38, 50, 56) !important;
+    font-size: 15px !important;
+    white-space: pre !important;
+    line-height: 1.5 !important;
+    -moz-tab-size: 4 !important;
+    -o-tab-size: 4 !important;
+    tab-size: 4 !important;
+}
+
+.markdown-section {
+    margin: 0 3.2% !important;
+}
+
+.markdown-section pre {
+    padding-left: 0 !important;
+    padding-right: 0px !important;
+}
+
+.markdown-section pre code {
+    color: rgb(130, 177, 255) !important;
+}
+
+.token.directive.keyword {
+    color: #4faee2 !important;
+}
+
+.token.keyword {
+    color: #c678dd !important;
+}
+
+.token.comment {
+    color: #737c8b !important;
+}
+
+.token.tag {
+    color: #a589ad !important;
+}
+
+.token.attr-name {
+    color: #de916c !important;
+}
+
+.token.attr-value {
+    color: #4faee2 !important;
+}
+
+.token.macro.property {
+    color: #4faee2 !important;
+}
+
+.token.function {
+    color: #e6b456 !important;
+}
+
+.token.string {
+    color: #98b755 !important;
+}
+
+.token.punctuation {
+    color: #c0c3c1 !important;
+}
+
+.token.number {
+    color: rgb(247, 118, 105) !important;
+}
+
+/* 响应式 */
+@media (max-width: 600px) {
+    .pagination-item-title {
+        display: none;
+    }
+
+    .markdown-section pre > code {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 16px !important;
+    }
+
+    pre {
+        padding-left: 3px !important;
+        padding-right: 3px !important;
+        margin-left: -20px !important;
+        margin-right: -20px !important;
+        box-shadow: 0 0 20px 0 #f7f7f7 !important;
+    }
+
+    .sidebar-nav ul li {
+        font-size: 15px;
+        margin: -3px;
+        padding: 0;
+    }
+}
+
+@media (min-width: 600px) {
+    .markdown-section pre > code {
+        font-size: 15px !important;
+        letter-spacing: 1px !important;
+        padding-left: 20px !important;
+    }
+}
+
