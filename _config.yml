@@ -1,0 +1,91 @@
+# 站点配置
+title: Space
+subtitle: ''
+description: ''
+keywords: Java, 笔记, LeetCode, hexo
+author: Xiangyu Li
+language: zh-CN
+timezone: Asia/Shanghai
+
+# URL
+url: http://blog.lixiangyu.xyz
+permalink: /:abbrlink.html
+pretty_urls:
+  trailing_index: false
+  trailing_html: false
+abbrlink:
+  alg: crc32
+  rep: hex
+
+# 目录配置
+source_dir: docs
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# 文章相关
+new_post_name: :title.md
+default_layout: post
+titlecase: false
+external_link:
+  enable: true
+  field: site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+
+# 主页文章显示设置
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# 分类和标签设置
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Metadata
+meta_generator: true
+
+# 时间格式
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+updated_option: 'mtime'
+
+# 分页
+per_page: 10
+pagination_dir: page
+
+# 配置主题和扩展
+theme: butterfly
+markdown:
+  plugins:
+    - plugin:
+      enable: true
+      name: '@neilsustc/markdown-it-katex'
+      options:
+        strict: false
+
+# 部署
+deploy:
+  type: ''

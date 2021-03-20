@@ -1,0 +1,34 @@
+#footer
+  position: relative
+  background: #FFFFFF
+  background-attachment: local
+  background-position: bottom
+  background-size: cover
+
+  if hexo-config('footer_bg') != false
+    &:before
+      position: absolute
+      width: 100%
+      height: 100%
+      background-color: alpha($dark-black, .5)
+      content: ''
+
+#footer-wrap
+  position: relative
+  color: #0d0d0d
+  text-align: center
+
+  a
+    color: var(--light-grey)
+
+    &:hover
+      text-decoration: underline
+
+  .footer-separator
+    margin: 0 .2rem
+
+  .icp-icon
+    padding: 0 4px
+    vertical-align: text-bottom
+    max-height: 1.4em
+    width auto

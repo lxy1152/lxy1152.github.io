@@ -1,0 +1,32 @@
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: build
+        run: npm install && npm run clean && npm run build
+
+      - name: cname
+        run:  echo blog.lixiangyu.xyz > ./public/CNAME
+
+      - name: commit
+        run: |
+          git config --local user.email "2676092082@qq.com"
+          git config --local user.name "Xiangyu Li"
+          git add .
+          git commit -m "build: 生成静态文件" -m "通过Github Action 生成静态文件"
+
+      - name: push
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
