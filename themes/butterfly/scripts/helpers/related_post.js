@@ -61,7 +61,7 @@ hexo.extend.helper.register('related_posts', function (currentPost, allPosts) {
           : relatedPosts[i].cover
       result +=
         '<div><a href="' +
-        hexoConfig.root +
+        hexoConfig.url +
         relatedPosts[i].path +
         '" title="' +
         relatedPosts[i].title +
