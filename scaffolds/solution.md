@@ -51,11 +51,13 @@ categories:
 
 {% tabs code %}
 <!-- tab 代码实现1 -->
-
+{% note success flat %}
+{% endnote %}
 <!-- endtab -->
 
 <!-- tab 代码实现2 -->
-
+{% note success flat %}
+{% endnote %}
 <!-- endtab -->
 {% endtabs %}
 
