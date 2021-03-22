@@ -1,0 +1,36 @@
+{
+  ".useful": [
+    {
+      "name": "Excalidraw",
+      "url": "https://excalidraw.com/",
+      "description": "在线手绘图白板"
+    },
+    {
+      "name": "nomnoml",
+      "url": "https://www.nomnoml.com/",
+      "description": "在线UML作图"
+    },
+    {
+      "name": "Emojipedia",
+      "url": "https://emojipedia.org/",
+      "description": "Emoji表情大全"
+    }
+  ],
+  ".docs": [
+    {
+      "name": "JavaScript",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference",
+      "description": "JavaScript API 文档"
+    },
+    {
+      "name": "HTML",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element",
+      "description": "HTML API 文档"
+    },
+    {
+      "name": "CSS",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference",
+      "description": "CSS API 文档"
+    }
+  ]
+}

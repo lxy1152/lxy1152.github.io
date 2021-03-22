@@ -4,6 +4,7 @@ menu:
  归档: /archives/ || far fa-file-archive
  标签: /tags/ || far fa-bookmark
  分类: /categories/ || far fa-folder-open
+ 收藏: /favorites/ || far fa-star
 # List||fas fa-list:
 #   - Music || /music/ || fas fa-music
 #   - Movie || /movies/ || fas fa-video
