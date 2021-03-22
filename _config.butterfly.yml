@@ -114,7 +114,7 @@ error_404:
 # 配置文章展示信息
 post_meta:
   page:
-    date_type: updated
+    date_type: created
     date_format: relative
     categories: true
     tags: true

@@ -1,5 +1,6 @@
 ---
 title: {{ title }}
+date: {{ date }}
 description: 
 katex: true
 cover: 
