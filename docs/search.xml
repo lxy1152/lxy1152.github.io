@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>341.扁平化嵌套列表迭代器</title>
+      <link href="/b4c84e9e.html"/>
+      <url>/b4c84e9e.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="题目信息">题目信息</h2><h3 id="题目描述">题目描述</h3><p>给你一个嵌套的整型列表，请你设计一个迭代器，使其能够遍历这个整型列表中的所有整数。<br>列表中的每一项或者为一个整数，或者是另一个列表。其中列表的元素也可能是整数或是其他列表。</p><h3 id="示例输出">示例输出</h3><div class="tabs" id="sample"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#sample-1">示例输出1</button></li><li class="tab"><button type="button" data-href="#sample-2">示例输出2</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="sample-1"><p>输入： <code>[[1, 1], 2, [1, 1]]</code><br>输出： <code>[1, 1, 2, 1, 1]</code></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="sample-2"><p>输入： <code>[1, [4, [6]]]</code><br>输出： <code>[1, 4, 6]</code></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div><h2 id="解题思路">解题思路</h2><p>可以先遍历一遍数组，将所有的数都保存到列表中，再通过这个列表实现 <code>next</code> 和 <code>hasNext</code> 方法。</p><div class="note info flat"><p>遍历数组需要使用 <code>dfs</code>。</p></div><h2 id="代码实现">代码实现</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">interface</span> <span class="title">NestedInteger</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">boolean</span> <span class="title">isInteger</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line">    <span class="function">Integer <span class="title">getInteger</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line">    <span class="function">List&lt;NestedInteger&gt; <span class="title">getList</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">NestedIterator</span> <span class="keyword">implements</span> <span class="title">Iterator</span>&lt;<span class="title">Integer</span>&gt; </span>&#123;</span><br><span class="line">    List&lt;Integer&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">    Iterator&lt;Integer&gt; iterator;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">NestedIterator</span><span class="params">(List&lt;NestedInteger&gt; nestedList)</span> </span>&#123;</span><br><span class="line">        dfs(nestedList);</span><br><span class="line">        iterator = list.iterator();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Integer <span class="title">next</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> iterator.next();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">hasNext</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> iterator.hasNext();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">dfs</span><span class="params">(List&lt;NestedInteger&gt; nestedList)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (NestedInteger nestedInteger : nestedList) &#123;</span><br><span class="line">            <span class="keyword">if</span> (nestedInteger.isInteger()) &#123;</span><br><span class="line">                list.add(nestedInteger.getInteger());</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                dfs(nestedInteger.getList());</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><div class="note success flat"><p>执行用时：3 ms, 在所有 Java 提交中击败了91.05%的用户<br>内存消耗：41 MB, 在所有 Java 提交中击败了21.46%的用户</p></div><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> LeetCode </category>
+          
+          <category> 题解 </category>
+          
+          <category> 301-400 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> dfs </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>1802.有界数组中指定下标处的最大值</title>
       <link href="/4b7b863f.html"/>
       <url>/4b7b863f.html</url>
