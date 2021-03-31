@@ -30,3 +30,9 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: backup
+        uses: pixta-dev/repository-mirroring-action@v1
+        with:
+          target_repo_url: git@gitee.com:lxy_jdsy/lxy_jdsy.git
+          ssh_private_key: ${{ secrets.GITEE_KEY }}
