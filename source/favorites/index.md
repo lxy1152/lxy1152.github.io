@@ -3,11 +3,15 @@ title: 收藏
 date: 2021-03-22 22:00:17
 ---
 
+## 导航/聚合类网站
+
+<div><div class="links-content"><div class="link-navigation aggregation"></div></div></div>
+
 ## 工具网站
 
 <div><div class="links-content"><div class="link-navigation useful"></div></div></div>
 
-## 官方文档
+## 文档
 
 <div><div class="links-content"><div class="link-navigation docs"></div></div></div>
 
@@ -53,7 +57,8 @@ date: 2021-03-22 22:00:17
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient(to right, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+  border: 1px solid #5cb85c;
+  border-radius: 15px;
   -webkit-transform: scale(0);
   transform: scale(0);
   -webkit-transition-property: transform;
@@ -65,6 +70,7 @@ date: 2021-03-22 22:00:17
 }
 
 .card:hover,.card:hover > .card-header a,.card:hover > .card-content a{
+    cursor: pointer;
     transform:scale(1);
 }
 
