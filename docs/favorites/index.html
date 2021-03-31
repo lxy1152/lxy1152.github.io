@@ -1,13 +1,13 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>收藏 | Xiangyu's Blog</title><meta name="keywords" content="Java, 笔记, LeetCode, hexo"><meta name="author" content="Xiangyu Li"><meta name="copyright" content="Xiangyu Li"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="导航&#x2F;聚合类网站  工具网站  文档     .links-content {   margin-top:1rem; }  .link-navigation::after {   content:&quot; &quot;;   display:block;   clear:both }  .card {   position:relative;   width:25%;   padding:0;   border-">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>收藏 | Xiangyu's Blog</title><meta name="keywords" content="Java, 笔记, LeetCode, hexo"><meta name="author" content="Xiangyu Li"><meta name="copyright" content="Xiangyu Li"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="导航&#x2F;聚合类网站  工具网站  文档     .links-content {   margin-top: 1rem; }  .link-navigation::after {   content: &quot; &quot;;   display: block;   clear: both }  .card {   position: relative;   width: 25%;   padding: 0;">
 <meta property="og:type" content="website">
 <meta property="og:title" content="收藏">
 <meta property="og:url" content="http://blog.lixiangyu.xyz/favorites/">
 <meta property="og:site_name" content="Xiangyu&#39;s Blog">
-<meta property="og:description" content="导航&#x2F;聚合类网站  工具网站  文档     .links-content {   margin-top:1rem; }  .link-navigation::after {   content:&quot; &quot;;   display:block;   clear:both }  .card {   position:relative;   width:25%;   padding:0;   border-">
+<meta property="og:description" content="导航&#x2F;聚合类网站  工具网站  文档     .links-content {   margin-top: 1rem; }  .link-navigation::after {   content: &quot; &quot;;   display: block;   clear: both }  .card {   position: relative;   width: 25%;   padding: 0;">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg">
 <meta property="article:published_time" content="2021-03-22T14:00:17.000Z">
-<meta property="article:modified_time" content="2021-03-31T09:02:13.982Z">
+<meta property="article:modified_time" content="2021-03-31T09:20:37.257Z">
 <meta property="article:author" content="Xiangyu Li">
 <meta property="article:tag" content="Java, 笔记, LeetCode, hexo">
 <meta name="twitter:card" content="summary">
@@ -57,7 +57,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2021-03-31 17:02:13'
+  postUpdate: '2021-03-31 17:20:37'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -132,28 +132,28 @@
 <script src="./favorites.js"></script>
 <style>
 .links-content {
-  margin-top:1rem;
+  margin-top: 1rem;
 }
 
 .link-navigation::after {
-  content:" ";
-  display:block;
-  clear:both
+  content: " ";
+  display: block;
+  clear: both
 }
 
 .card {
-  position:relative;
-  width:25%;
-  padding:0;
-  border-radius:10px;
-  transition-duration:.3s;
-  margin-bottom:1rem;
-  margin-left:16px;
-  display:block;
-  float:left;
-  box-shadow:0 2px 6px 0 rgba(0,0,0,.12);
+  position: relative;
+  width: 25%;
+  padding: 0;
+  border-radius: 10px;
+  transition-duration: .3s;
+  margin-bottom: 1rem;
+  margin-left: 16px;
+  display: block;
+  float: left;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,.12);
   background: transparent;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .card:hover:before, .card:focus:before, .card:active:before {
@@ -183,32 +183,34 @@
 
 .card:hover,.card:hover > .card-header a,.card:hover > .card-content a{
     cursor: pointer;
-    transform:scale(1);
+    transform: scale(1);
 }
 
 @media(max-width:567px) {
   .card{
-      margin-left:16px;
-      width:calc((100% - 16px)/2)
+      margin-left: 16px;
+      width: calc((100% - 16px)/2)
   }
   .card:nth-child(2n+1) {
-      margin-left:0
+      margin-left: 0
   }
   .card:not(:nth-child(2n+1)) {
-      margin-left:16px
+      margin-left: 16px
   }
 }
 
 @media(min-width:567px) {
   .card {
-    margin-left:16px;
-    width:calc((100% - 32px)/3)
+    margin-left: 16px;
+    width: calc((100% - 32px)/3)
   }
+
   .card:nth-child(3n+1) {
-    margin-left:0
+    margin-left: 0
   }
+
   .card:not(:nth-child(3n+1)) {
-    margin-left:16px
+    margin-left: 16px
   }
 }
 
@@ -217,65 +219,67 @@
     margin-left:16px;
     width:calc((100% - 48px)/4)
   }
+
   .card:nth-child(4n+1) {
     margin-left:0
   }
+
   .card:not(:nth-child(4n+1)) {
     margin-left:16px
   }
 }
 
 .posts-expand .post-body img {
-  margin:0;
-  padding:0;
-  border:0
+  margin: 0;
+  padding: 0;
+  border: 0
 }
 
 .card .card-header {
-  display:block;
-  text-align:center;
-  padding:.25rem .25rem;
-  font-weight:500;
-  color:#222222;
-  white-space:nowrap;
+  display: block;
+  text-align: center;
+  padding: .25rem .25rem;
+  font-weight: 500;
+  color: #222222;
+  white-space: nowrap;
 }
 
 .card .card-header a {
-  font-style:normal;
-  color:#222222;
-  font-weight:700;
-  text-decoration:none;
-  border:0;
-  overflow:hidden
+  font-style: normal;
+  color: #222222;
+  font-weight: 700;
+  text-decoration: none;
+  border: 0;
+  overflow: hidden
 }
 
 .card .card-header a:hover {
-  color:#222222;
-  text-decoration:none;
-  border:0
+  color: #222222;
+  text-decoration: none;
+  border: 0
 }
 
 .card .card-content {
-  display:block;
-  text-align:center;
+  display: block;
+  text-align: center;
   padding: 0 .25rem .25rem .25rem;
-  font-weight:500;
+  font-weight: 500;
   font-size: smaller;
-  color:#222222;
-  white-space:nowrap;
+  color: #222222;
+  white-space: nowrap;
 }
 
 .card .card-content div {
-  overflow:hidden
+  overflow: hidden
 }
 
 .card .card-content a {
-  font-style:normal;
-  color:#222222;
-  font-weight:500;
-  text-decoration:none;
-  border:0;
-  overflow:hidden
+  font-style: normal;
+  color: #222222;
+  font-weight: 500;
+  text-decoration: none;
+  border: 0;
+  overflow: hidden
 }
 </style>
 </div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Xiangyu Li</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">18</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">16</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/lxy1152" target="_blank" title="Github"><i class="fab fa-github"></i></a></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/36835ba" title="1808.好因子的最大数目"><img src="https://images.unsplash.com/photo-1538131052268-1af52c1db73d?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDE0fGJvOGpRS1RhRTBZfHxlbnwwfHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" onerror="this.onerror=null;this.src='/img/404.png'" alt="1808.好因子的最大数目"/></a><div class="content"><a class="title" href="/36835ba" title="1808.好因子的最大数目">1808.好因子的最大数目</a><time datetime="2021-03-29T08:36:18.000Z" title="发表于 2021-03-29 16:36:18">2021-03-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/fdb00dd7" title="1807.替换字符串中的括号内容"><img src="https://images.unsplash.com/photo-1537781378841-c0d7f8363136?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDEzfGJvOGpRS1RhRTBZfHxlbnwwfHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" onerror="this.onerror=null;this.src='/img/404.png'" alt="1807.替换字符串中的括号内容"/></a><div class="content"><a class="title" href="/fdb00dd7" title="1807.替换字符串中的括号内容">1807.替换字符串中的括号内容</a><time datetime="2021-03-29T08:14:01.000Z" title="发表于 2021-03-29 16:14:01">2021-03-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/125cfb1b" title="1806.还原排列的最少操作步数"><img src="https://images.unsplash.com/photo-1587471384749-6d25c9944c5a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80" onerror="this.onerror=null;this.src='/img/404.png'" alt="1806.还原排列的最少操作步数"/></a><div class="content"><a class="title" href="/125cfb1b" title="1806.还原排列的最少操作步数">1806.还原排列的最少操作步数</a><time datetime="2021-03-29T06:01:30.000Z" title="发表于 2021-03-29 14:01:30">2021-03-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/4b630256" title="1805.字符串中不同整数的数目"><img src="https://images.unsplash.com/photo-1543782248-03e2c5a93e18?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1351&amp;q=80" onerror="this.onerror=null;this.src='/img/404.png'" alt="1805.字符串中不同整数的数目"/></a><div class="content"><a class="title" href="/4b630256" title="1805.字符串中不同整数的数目">1805.字符串中不同整数的数目</a><time datetime="2021-03-29T05:39:55.000Z" title="发表于 2021-03-29 13:39:55">2021-03-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/b4c84e9e" title="341.扁平化嵌套列表迭代器"><img src="https://images.unsplash.com/photo-1616161245573-e16599aa0fec?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1293&amp;q=80" onerror="this.onerror=null;this.src='/img/404.png'" alt="341.扁平化嵌套列表迭代器"/></a><div class="content"><a class="title" href="/b4c84e9e" title="341.扁平化嵌套列表迭代器">341.扁平化嵌套列表迭代器</a><time datetime="2021-03-23T02:35:59.000Z" title="发表于 2021-03-23 10:35:59">2021-03-23</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
