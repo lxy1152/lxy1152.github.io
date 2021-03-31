@@ -20,28 +20,28 @@ date: 2021-03-22 22:00:17
 
 <style>
 .links-content {
-  margin-top:1rem;
+  margin-top: 1rem;
 }
 
 .link-navigation::after {
-  content:" ";
-  display:block;
-  clear:both
+  content: " ";
+  display: block;
+  clear: both
 }
 
 .card {
-  position:relative;
-  width:25%;
-  padding:0;
-  border-radius:10px;
-  transition-duration:.3s;
-  margin-bottom:1rem;
-  margin-left:16px;
-  display:block;
-  float:left;
-  box-shadow:0 2px 6px 0 rgba(0,0,0,.12);
+  position: relative;
+  width: 25%;
+  padding: 0;
+  border-radius: 10px;
+  transition-duration: .3s;
+  margin-bottom: 1rem;
+  margin-left: 16px;
+  display: block;
+  float: left;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,.12);
   background: transparent;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .card:hover:before, .card:focus:before, .card:active:before {
@@ -71,32 +71,34 @@ date: 2021-03-22 22:00:17
 
 .card:hover,.card:hover > .card-header a,.card:hover > .card-content a{
     cursor: pointer;
-    transform:scale(1);
+    transform: scale(1);
 }
 
 @media(max-width:567px) {
   .card{
-      margin-left:16px;
-      width:calc((100% - 16px)/2)
+      margin-left: 16px;
+      width: calc((100% - 16px)/2)
   }
   .card:nth-child(2n+1) {
-      margin-left:0
+      margin-left: 0
   }
   .card:not(:nth-child(2n+1)) {
-      margin-left:16px
+      margin-left: 16px
   }
 }
 
 @media(min-width:567px) {
   .card {
-    margin-left:16px;
-    width:calc((100% - 32px)/3)
+    margin-left: 16px;
+    width: calc((100% - 32px)/3)
   }
+
   .card:nth-child(3n+1) {
-    margin-left:0
+    margin-left: 0
   }
+
   .card:not(:nth-child(3n+1)) {
-    margin-left:16px
+    margin-left: 16px
   }
 }
 
@@ -105,65 +107,67 @@ date: 2021-03-22 22:00:17
     margin-left:16px;
     width:calc((100% - 48px)/4)
   }
+
   .card:nth-child(4n+1) {
     margin-left:0
   }
+
   .card:not(:nth-child(4n+1)) {
     margin-left:16px
   }
 }
 
 .posts-expand .post-body img {
-  margin:0;
-  padding:0;
-  border:0
+  margin: 0;
+  padding: 0;
+  border: 0
 }
 
 .card .card-header {
-  display:block;
-  text-align:center;
-  padding:.25rem .25rem;
-  font-weight:500;
-  color:#222222;
-  white-space:nowrap;
+  display: block;
+  text-align: center;
+  padding: .25rem .25rem;
+  font-weight: 500;
+  color: #222222;
+  white-space: nowrap;
 }
 
 .card .card-header a {
-  font-style:normal;
-  color:#222222;
-  font-weight:700;
-  text-decoration:none;
-  border:0;
-  overflow:hidden
+  font-style: normal;
+  color: #222222;
+  font-weight: 700;
+  text-decoration: none;
+  border: 0;
+  overflow: hidden
 }
 
 .card .card-header a:hover {
-  color:#222222;
-  text-decoration:none;
-  border:0
+  color: #222222;
+  text-decoration: none;
+  border: 0
 }
 
 .card .card-content {
-  display:block;
-  text-align:center;
+  display: block;
+  text-align: center;
   padding: 0 .25rem .25rem .25rem;
-  font-weight:500;
+  font-weight: 500;
   font-size: smaller;
-  color:#222222;
-  white-space:nowrap;
+  color: #222222;
+  white-space: nowrap;
 }
 
 .card .card-content div {
-  overflow:hidden
+  overflow: hidden
 }
 
 .card .card-content a {
-  font-style:normal;
-  color:#222222;
-  font-weight:500;
-  text-decoration:none;
-  border:0;
-  overflow:hidden
+  font-style: normal;
+  color: #222222;
+  font-weight: 500;
+  text-decoration: none;
+  border: 0;
+  overflow: hidden
 }
 </style>
 
