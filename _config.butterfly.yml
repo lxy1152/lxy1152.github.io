@@ -62,7 +62,7 @@ katex:
   hide_scrollbar: true
 
 # icon设置
-favicon: /img/favicon.png
+favicon: /img/favicon.ico
 
 # 侧边栏头像设置
 avatar:
