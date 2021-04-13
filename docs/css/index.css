@@ -1419,7 +1419,7 @@ button {
   cursor: pointer;
 }
 a {
-  color: #99a9bf;
+  color: #00c4b6;
   text-decoration: none;
   word-wrap: break-word;
   -webkit-transition: all 0.2s;
@@ -3829,7 +3829,7 @@ _:future,
   overflow-wrap: break-word;
 }
 #article-container a {
-  color: #99a9bf;
+  color: #1f2d3d;
 }
 #article-container a:hover {
   text-decoration: underline;
