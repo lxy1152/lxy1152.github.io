@@ -5,9 +5,10 @@ description:
 katex: true
 cover: 
 tags:
+  - LeetCode题解
 categories:
-- LeetCode
-- 题解
+  - LeetCode
+  - 题解
 ---
 
 ## 题目信息
