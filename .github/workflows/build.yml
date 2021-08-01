@@ -11,8 +11,11 @@ jobs:
       - name: checkout
         uses: actions/checkout@v1
 
+      - name: clean
+        run: rm -rf docs
+
       - name: build
-        run: npm install && npm run clean && npm run build
+        run: npm install && npm run build
 
       - name: cname
         run:  echo blog.lixiangyu.xyz > ./docs/CNAME
@@ -22,7 +25,7 @@ jobs:
           git config --local user.email "2676092082@qq.com"
           git config --local user.name "Xiangyu Li"
           git add .
-          git commit -m "build: 生成静态文件" -m "通过Github Action 生成静态文件"
+          git commit -m "build: 生成静态文件" -m "通过 Github Action 生成静态文件"
 
       - name: push
         uses: ad-m/github-push-action@master

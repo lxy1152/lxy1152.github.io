@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.6.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.3"></script><script>((e,t,r)=>{const{Markmap:n}=e();window.mm=n.create("svg#mindmap",null==t?void 0:t(),r)})(()=>window.markmap,t=>{return t=t||window.d3,{color:(n=t.scaleOrdinal(t.schemeCategory10),t=>n(t.p.i))};var n},{"t":"heading","d":1,"p":{"lines":[0,1]},"v":"Map","c":[{"t":"heading","d":2,"p":{"lines":[2,3]},"v":"SortedMap","c":[{"t":"list_item","d":4,"p":{"lines":[4,5]},"v":"TreeMap","c":[{"t":"list_item","d":6,"p":{"lines":[5,6]},"v":"基于红黑树实现"}]}]},{"t":"heading","d":2,"p":{"lines":[7,8]},"v":"HashTable","c":[{"t":"list_item","d":4,"p":{"lines":[9,10]},"v":"线程安全但是效率低"},{"t":"list_item","d":4,"p":{"lines":[10,11]},"v":"遗留类，不要主动使用"}]},{"t":"heading","d":2,"p":{"lines":[12,13]},"v":"HashMap","c":[{"t":"list_item","d":4,"p":{"lines":[14,15]},"v":"内部维护一个Entry类型的数组table，这个数组的每个位置都是一个桶，它可以保存一个链表，链表使用头插法插入新的元素"},{"t":"list_item","d":4,"p":{"lines":[15,16]},"v":"通过对大小求余(等价于与运算)，决定新的元素要放在哪个桶里"},{"t":"list_item","d":4,"p":{"lines":[16,17]},"v":"JDK8开始，如果链表长度大于等于8，会从链表转化为红黑树；如果数量小于6，会从红黑树转化为链表"},{"t":"list_item","d":4,"p":{"lines":[17,18]},"v":"默认大小为16，且大小一定是2^n，每次扩容会使容量变为原来的2倍"},{"t":"list_item","d":4,"p":{"lines":[18,19]},"v":"构造器支持传入的容量不是2^n，通过求掩码可以将这个数转为2^n"},{"t":"list_item","d":4,"p":{"lines":[19,20]},"v":"线程不安全"}]},{"t":"heading","d":2,"p":{"lines":[21,22]},"v":"ConcurrentHashMap","c":[{"t":"list_item","d":4,"p":{"lines":[23,24]},"v":"和HashMap类似"},{"t":"list_item","d":4,"p":{"lines":[24,25]},"v":"JDK7使用分段锁（Segment）保证线程安全","c":[{"t":"list_item","d":6,"p":{"lines":[25,26]},"v":"每个分段锁负责维护几个桶，多个线程可以同时访问不同分段锁上的桶"},{"t":"list_item","d":6,"p":{"lines":[26,27]},"v":"Segment的数量称为并发度"},{"t":"list_item","d":6,"p":{"lines":[27,28]},"v":"默认并发度大小为16"}]},{"t":"list_item","d":4,"p":{"lines":[28,29]},"v":"JDK8通过CAS和synchronized保证线程安全"}]},{"t":"heading","d":2,"p":{"lines":[30,31]},"v":"LinkedHashMap","c":[{"t":"list_item","d":4,"p":{"lines":[32,33]},"v":"继承自HashMap"},{"t":"list_item","d":4,"p":{"lines":[33,34]},"v":"内部通过维护一个双向链表保存元素顺序"},{"t":"list_item","d":4,"p":{"lines":[34,35]},"v":"顺序为插入顺序或LRU顺序","c":[{"t":"list_item","d":6,"p":{"lines":[35,36]},"v":"如果属性accessOrder为true，那么这个节点会被移到链表尾部，保证链表尾部是最近访问的节点，即LRU顺序"}]}]}]})</script>
+</body>
+</html>
