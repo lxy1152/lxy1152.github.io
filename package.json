@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "vuepress build source",
+    "super:build": "node --max_old_space_size=8192 ./node_modules/vuepress/cli.js build source",
     "clean-dev": "vuepress dev source --no-cache",
     "dev": "vuepress dev source",
     "eject-theme": "vuepress eject-hope source"
