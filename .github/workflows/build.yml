@@ -8,42 +8,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: checkout
-        uses: actions/checkout@v1
-
-      - name: clean
-        run: rm -rf docs
-
-      - uses: actions/cache@v2.1.6
-        id: node-modules
-        with:
-          path: node_modules/
-          key: ${{ runner.os }}-node-modules-${{ hashFiles('yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-node-modules-
-
-      - name: install
-        if: steps.node-modules.outputs.cache-hit != 'true'
-        run: yarn install --frozen-lockfile
-
-      - name: build
-        run: yarn run super:build
-
-      - name: cname
-        run:  echo blog.lixiangyu.xyz > ./docs/CNAME
-
-      - name: commit
-        run: |
-          git config --local user.email "2676092082@qq.com"
-          git config --local user.name "Xiangyu Li"
-          git add .
-          git commit -m "build: 生成静态文件" -m "通过 Github Action 生成静态文件"
-
-      - name: push
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-
       - name: backup
         uses: pixta-dev/repository-mirroring-action@v1
         with:
