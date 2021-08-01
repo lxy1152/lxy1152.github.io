@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.6.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.3"></script><script>((e,t,r)=>{const{Markmap:n}=e();window.mm=n.create("svg#mindmap",null==t?void 0:t(),r)})(()=>window.markmap,t=>{return t=t||window.d3,{color:(n=t.scaleOrdinal(t.schemeCategory10),t=>n(t.p.i))};var n},{"t":"heading","d":1,"p":{"lines":[0,1]},"v":"List","c":[{"t":"heading","d":2,"p":{"lines":[2,3]},"v":"ArrayList","c":[{"t":"heading","d":3,"p":{"lines":[4,5]},"v":"基于动态数组实现，支持O(1)的随机访问"},{"t":"heading","d":3,"p":{"lines":[5,6]},"v":"插入、删除操作会移动元素，时间复杂度为O(n)"},{"t":"heading","d":3,"p":{"lines":[6,7]},"v":"默认容量为10，扩容因子近似为1.5，扩容为复制操作"},{"t":"heading","d":3,"p":{"lines":[7,8]},"v":"CopyOnWriteArrayList"}]},{"t":"heading","d":2,"p":{"lines":[9,10]},"v":"Vector","c":[{"t":"heading","d":3,"p":{"lines":[11,12]},"v":"与ArrayList类似"},{"t":"heading","d":3,"p":{"lines":[12,13]},"v":"使用synchronized关键字，线程安全，但是效率低"},{"t":"heading","d":3,"p":{"lines":[13,14]},"v":"扩容可控制，默认为两倍扩容"},{"t":"heading","d":3,"p":{"lines":[14,15]},"v":"可以使用Collections.synchronizedList()或者CopyOnWriteArrayList替代"}]},{"t":"heading","d":2,"p":{"lines":[16,17]},"v":"LinkedList","c":[{"t":"heading","d":3,"p":{"lines":[18,19]},"v":"基于双向链表，只能顺序访问"},{"t":"heading","d":3,"p":{"lines":[19,20]},"v":"可以快速插入和删除"},{"t":"heading","d":3,"p":{"lines":[20,21]},"v":"可以用作栈，队列和双向队列"}]}]})</script>
+</body>
+</html>

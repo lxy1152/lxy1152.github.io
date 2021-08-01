@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.6.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.3"></script><script>((e,t,r)=>{const{Markmap:n}=e();window.mm=n.create("svg#mindmap",null==t?void 0:t(),r)})(()=>window.markmap,t=>{return t=t||window.d3,{color:(n=t.scaleOrdinal(t.schemeCategory10),t=>n(t.p.i))};var n},{"t":"heading","d":1,"p":{"lines":[0,1]},"v":"Set","c":[{"t":"heading","d":2,"p":{"lines":[2,3]},"v":"TreeSet","c":[{"t":"heading","d":3,"p":{"lines":[4,5]},"v":"基于红黑树实现，支持有序操作"},{"t":"heading","d":3,"p":{"lines":[5,6]},"v":"查找效率低，时间复杂度为O(logN)"}]},{"t":"heading","d":2,"p":{"lines":[7,8]},"v":"HashSet","c":[{"t":"heading","d":3,"p":{"lines":[9,10]},"v":"基于HashMap实现，支持快速查找，但不支持有序操作"},{"t":"heading","d":3,"p":{"lines":[10,11]},"v":"查找效率高，时间复杂度为O(1)"}]},{"t":"heading","d":2,"p":{"lines":[12,13]},"v":"LinkedHashSet","c":[{"t":"heading","d":3,"p":{"lines":[14,15]},"v":"内部使用双向链表维护插入顺序"},{"t":"heading","d":3,"p":{"lines":[15,16]},"v":"查找效率高，时间复杂度为O(1)"}]}]})</script>
+</body>
+</html>
