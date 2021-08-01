@@ -14,8 +14,20 @@ jobs:
       - name: clean
         run: rm -rf docs
 
+      - uses: actions/cache@v2.1.6
+        id: node-modules
+        with:
+          path: node_modules/
+          key: ${{ runner.os }}-node-modules-${{ hashFiles('yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-node-modules-
+
+      - name: install
+        if: steps.node-modules.outputs.cache-hit != 'true'
+        run: yarn install --frozen-lockfile
+
       - name: build
-        run: npm install && npm run build
+        run: yarn run super:build
 
       - name: cname
         run:  echo blog.lixiangyu.xyz > ./docs/CNAME
