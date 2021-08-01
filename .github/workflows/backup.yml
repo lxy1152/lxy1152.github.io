@@ -8,6 +8,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: checkout
+        uses: actions/checkout@v1
+
       - name: backup
         uses: pixta-dev/repository-mirroring-action@v1
         with:
