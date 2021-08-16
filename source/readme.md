@@ -11,7 +11,7 @@ heroFullScreen: false
 
 action:
 - text: 开始阅读 🏝️
-  link: /interview/
+  link: https://interview.docs.lixiangyu.xyz/
   type: primary
 
 - text: Github 地址 🔮
@@ -20,7 +20,7 @@ action:
 features:
 - title: 面试题整理 ⭐
   details: 整理 Java 后端常见的面试题
-  link: /interview/
+  link: https://interview.docs.lixiangyu.xyz/
 
 - title: LeetCode 算法题整理 🤿
   details: 刷刷刷 🛫

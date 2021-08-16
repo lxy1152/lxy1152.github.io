@@ -43,7 +43,6 @@ module.exports = config({
 
         nav: [
             {text: "主页", link: "/", icon: "home"},
-            {text: "面试题整理", link: "/interview/", icon: "launch"},
             // {
             //     text: "源码学习",
             //     icon: "creative",
